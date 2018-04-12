@@ -7,7 +7,7 @@ namespace System.Runtime.InteropServices
 {
     //BARTOK expects
     [AttributeUsage(AttributeTargets.Method)]
-    public sealed class NativeCallableAttribute : Attribute
+    internal sealed class NativeCallableAttribute : Attribute
     {
         // Optional. If omitted, then the method is native callable, but no EAT is emitted.
         public string EntryPoint;
